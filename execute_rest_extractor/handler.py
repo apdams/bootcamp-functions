@@ -6,6 +6,7 @@ from ice_cream_factory_datapoints_extractor import extractor
 
 
 def handle(secrets, data):
+    # comment
     print("running rest extractor.")
     if secrets:
         os.environ["COGNITE_CLIENT_ID"] = secrets.get("client-id")
