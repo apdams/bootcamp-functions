@@ -3,9 +3,10 @@ from __future__ import annotations
 import os
 
 from ice_cream_factory_datapoints_extractor import extractor
-# comment
+
 
 def handle(secrets, data):
+    # comment
     print("running rest extractor.")
     if secrets:
         os.environ["COGNITE_CLIENT_ID"] = secrets.get("client-id")
